@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Stock from '../components/Stock'
 
 class StockContainer extends Component {
 
@@ -9,6 +8,7 @@ class StockContainer extends Component {
         <h2>Stocks</h2>
         {
           //render the list of stocks here
+          this.props.displayStocks(this.props.stocks)
         }
       </div>
     );
